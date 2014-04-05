@@ -1,0 +1,14 @@
+#Procedure to compile the test programs
+#Change the permission of compile.sh to executable if its not already an executable
+
+1)compile.sh script support following two backend
+  OpenCL and CUDA
+
+2)To compile your program with CUDA use
+  ./compile.sh CUDA
+
+3)To compile with OpenCL use
+  ./compile.sh OpenCL
+
+4)To run the program use
+  ./bin/devlist 
