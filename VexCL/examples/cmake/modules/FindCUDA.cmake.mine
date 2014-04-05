@@ -1,0 +1,24 @@
+# - Finds Vc installation ( the wrapper library to SIMD intrinsics )
+# This module sets up Vc information 
+# It defines:
+# CUDA_FOUND          If the ROOT is found
+# CUDA_INCLUDE_DIR    PATH to the include directory
+# CUDA_LIBRARIES      Most common libraries
+# CUDA_LIBRARY_DIR    PATH to the library directory 
+
+# look if an environment variable CUDAROOT exists
+set(CUDAROOT $ENV{CUDAROOT})
+
+find_library(CUDA_LIBRARIES libcudart.so PATHS ${CUDAROOT}/lib64)
+if (CUDA_LIBRARIES) 
+   set(CUDA_FOUND TRUE)	
+   #string(REPLACE "/lib/libnt2.a" "" CUDAROOT  ${CUDA_LIBRARIES})
+   set(CUDA_INCLUDE_DIR ${CUDAROOT}/include)
+   set(CUDA_LIBRARY_DIR ${CUDAROOT}/lib64)
+   message(STATUS "Found CUDA library in ${CUDA_LIBRARIES}")		
+else()
+   message(STATUS "CUDA library not found; try to set a CUDAROOT environment variable to the base installation path or add -DCUDAROOT= to the cmake command")	
+endif()
+
+
+
