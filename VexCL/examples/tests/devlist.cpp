@@ -10,7 +10,7 @@ int main() {
     using namespace std;
 
     auto dev = vex::backend::device_list(vex::Filter::Any);
-
+    //vex::Filter::Type(CL_DEVICE_TYPE_GPU)
 #ifdef VEXCL_BACKEND_OPENCL
     cout << "OpenCL devices:" << endl << endl;
     for (auto d = dev.begin(); d != dev.end(); d++) {

@@ -51,16 +51,29 @@ function(add_vexcl_example example)
 endfunction()
 
 #----------------------------------------------------------------------------
-# General examples
+# General examples                                                          -
 #----------------------------------------------------------------------------
+
+#uncomment below line to see the generated kernels.
+#add_definitions(-DVEXCL_SHOW_KERNELS)
+
 if ("${VEXCL_BACKEND}" STREQUAL "OpenCL")
     message(STATUS "++++++++++++++++++")
     message(STATUS "Going for OpenCL")
     message(STATUS "++++++++++++++++++")
     add_definitions(-DVEXCL_BACKEND_OPENCL)
+    #add_definitions(-DVEXCL_SHOW_KERNELS)
     set(BACKEND_LIBS ${OPENCL_LIBRARIES})
     message(STATUS ${BACKEND_LIBS})
-    add_vexcl_example(devlist)
+    file(GLOB testsources *.cpp)
+    foreach( test ${testsources} )
+        get_filename_component( TESTEXEC ${test} NAME_WE)
+        add_vexcl_example(${TESTEXEC})
+    endforeach( test )
+    #add_vexcl_example(devlist)
+    #add_vexcl_example(first2)
+    #add_vexcl_example(context)
+    #add_vexcl_example(backends)
 endif()
 
 if ("${VEXCL_BACKEND}" STREQUAL "CUDA")
@@ -72,7 +85,16 @@ if ("${VEXCL_BACKEND}" STREQUAL "CUDA")
     include_directories(${CUDA_INCLUDE_DIRS})
     set(BACKEND_LIBS ${CUDA_LIBRARIES})
     message(STATUS ${BACKEND_LIBS})
-    add_vexcl_example(devlist)
+    file(GLOB testsources *.cpp)
+    foreach( test ${testsources} )
+        get_filename_component( TESTEXEC ${test} NAME_WE)
+        add_vexcl_example(${TESTEXEC})
+    endforeach( test )
+
+    #add_vexcl_example(devlist)
+    #add_vexcl_example(first2)
+    #add_vexcl_example(context)
+    #add_vexcl_example(backends)
 endif()
 
 #add_vexcl_example(first)
