@@ -1,0 +1,566 @@
+-- The C compiler identification is GNU 4.7.2
+-- The CXX compiler identification is GNU 4.7.2
+-- Check for working C compiler: /usr/lib64/ccache/cc
+-- Check for working C compiler: /usr/lib64/ccache/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working CXX compiler: /usr/lib64/ccache/c++
+-- Check for working CXX compiler: /usr/lib64/ccache/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Found VEXCL library in /home/raman/BackBoneSoftwares/vexcl/lib/libtestVexCL.so
+-- Selected Library : OPENCL
+-- Found OPENCL library in /home/raman/BackBoneSoftwares/OpenCL/lib/libOpenCL.so
+-- OPENCL LIBRARIES : /home/raman/BackBoneSoftwares/OpenCL/lib/libOpenCL.so
+-- Boost version: 1.50.0
+-- Found the following Boost libraries:
+--   date_time
+--   filesystem
+--   system
+--   thread
+--   unit_test_framework
+--   program_options
+-- BOOST found : /usr/lib64/libboost_date_time-mt.so;/usr/lib64/libboost_filesystem-mt.so;/usr/lib64/libboost_system-mt.so;/usr/lib64/libboost_thread-mt.so;/usr/lib64/libboost_unit_test_framework-mt.so;/usr/lib64/libboost_program_options-mt.so
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/raman/WORK/GPU/VexCLTest/build
+Scanning dependencies of target add
+[ 50%] Building CXX object CMakeFiles/add.dir/add.cpp.o
+In file included from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl.hpp:41:0,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend.hpp:68,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/vexcl.hpp:34,
+                 from /home/raman/WORK/GPU/VexCLTest/add.cpp:1:
+/home/raman/BackBoneSoftwares/OpenCL/include/CL/cl.hpp:241:28: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+In file included from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl.hpp:41:0,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend.hpp:68,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/vexcl.hpp:34,
+                 from /home/raman/WORK/GPU/VexCLTest/add.cpp:1:
+/home/raman/BackBoneSoftwares/OpenCL/include/CL/cl.hpp:3416:7: warning: unused parameter ‘events’ [-Wunused-parameter]
+/home/raman/WORK/GPU/VexCLTest/add.cpp: In function ‘int main()’:
+/home/raman/WORK/GPU/VexCLTest/add.cpp:42:1: error: ‘vec’ has not been declared
+/home/raman/WORK/GPU/VexCLTest/add.cpp:42:13: error: expected primary-expression before ‘double’
+/home/raman/WORK/GPU/VexCLTest/add.cpp:42:13: error: expected ‘;’ before ‘double’
+/home/raman/WORK/GPU/VexCLTest/add.cpp:43:5: error: no match for ‘operator+’ in ‘x + y’
+/home/raman/WORK/GPU/VexCLTest/add.cpp:43:5: note: candidates are:
+In file included from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl/source.hpp:41:0,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl.hpp:47,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend.hpp:68,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/vexcl.hpp:34,
+                 from /home/raman/WORK/GPU/VexCLTest/add.cpp:1:
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:166:147: note: cl_float2 operator+(const cl_float2&, const cl_float2&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:166:147: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_float2&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:166:1097: note: cl_float2 operator+(const cl_float2&, const cl_float&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:166:1097: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_float2&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:166:1206: note: cl_float2 operator+(const cl_float&, const cl_float2&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:166:1206: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_float& {aka const float&}’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:166:3119: note: cl_float4 operator+(const cl_float4&, const cl_float4&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:166:3119: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_float4&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:166:4069: note: cl_float4 operator+(const cl_float4&, const cl_float&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:166:4069: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_float4&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:166:4178: note: cl_float4 operator+(const cl_float&, const cl_float4&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:166:4178: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_float& {aka const float&}’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:166:6091: note: cl_float8 operator+(const cl_float8&, const cl_float8&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:166:6091: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_float8&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:166:7041: note: cl_float8 operator+(const cl_float8&, const cl_float&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:166:7041: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_float8&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:166:7150: note: cl_float8 operator+(const cl_float&, const cl_float8&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:166:7150: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_float& {aka const float&}’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:166:9068: note: cl_float16 operator+(const cl_float16&, const cl_float16&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:166:9068: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_float16&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:166:10049: note: cl_float16 operator+(const cl_float16&, const cl_float&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:166:10049: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_float16&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:166:10161: note: cl_float16 operator+(const cl_float&, const cl_float16&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:166:10161: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_float& {aka const float&}’
+In file included from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl/source.hpp:41:0,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl.hpp:47,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend.hpp:68,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/vexcl.hpp:34,
+                 from /home/raman/WORK/GPU/VexCLTest/add.cpp:1:
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:167:151: note: cl_double2 operator+(const cl_double2&, const cl_double2&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:167:151: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_double2&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:167:1129: note: cl_double2 operator+(const cl_double2&, const cl_double&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:167:1129: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_double2&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:167:1242: note: cl_double2 operator+(const cl_double&, const cl_double2&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:167:1242: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_double& {aka const double&}’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:167:3204: note: cl_double4 operator+(const cl_double4&, const cl_double4&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:167:3204: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_double4&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:167:4182: note: cl_double4 operator+(const cl_double4&, const cl_double&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:167:4182: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_double4&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:167:4295: note: cl_double4 operator+(const cl_double&, const cl_double4&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:167:4295: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_double& {aka const double&}’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:167:6257: note: cl_double8 operator+(const cl_double8&, const cl_double8&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:167:6257: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_double8&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:167:7235: note: cl_double8 operator+(const cl_double8&, const cl_double&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:167:7235: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_double8&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:167:7348: note: cl_double8 operator+(const cl_double&, const cl_double8&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:167:7348: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_double& {aka const double&}’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:167:9315: note: cl_double16 operator+(const cl_double16&, const cl_double16&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:167:9315: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_double16&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:167:10324: note: cl_double16 operator+(const cl_double16&, const cl_double&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:167:10324: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_double16&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:167:10440: note: cl_double16 operator+(const cl_double&, const cl_double16&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:167:10440: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_double& {aka const double&}’
+In file included from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl/source.hpp:41:0,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl.hpp:47,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend.hpp:68,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/vexcl.hpp:34,
+                 from /home/raman/WORK/GPU/VexCLTest/add.cpp:1:
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:168:143: note: cl_char2 operator+(const cl_char2&, const cl_char2&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:168:143: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_char2&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:168:1065: note: cl_char2 operator+(const cl_char2&, const cl_char&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:168:1065: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_char2&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:168:1170: note: cl_char2 operator+(const cl_char&, const cl_char2&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:168:1170: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_char& {aka const signed char&}’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:168:3034: note: cl_char4 operator+(const cl_char4&, const cl_char4&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:168:3034: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_char4&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:168:3956: note: cl_char4 operator+(const cl_char4&, const cl_char&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:168:3956: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_char4&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:168:4061: note: cl_char4 operator+(const cl_char&, const cl_char4&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:168:4061: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_char& {aka const signed char&}’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:168:5925: note: cl_char8 operator+(const cl_char8&, const cl_char8&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:168:5925: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_char8&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:168:6847: note: cl_char8 operator+(const cl_char8&, const cl_char&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:168:6847: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_char8&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:168:6952: note: cl_char8 operator+(const cl_char&, const cl_char8&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:168:6952: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_char& {aka const signed char&}’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:168:8821: note: cl_char16 operator+(const cl_char16&, const cl_char16&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:168:8821: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_char16&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:168:9774: note: cl_char16 operator+(const cl_char16&, const cl_char&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:168:9774: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_char16&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:168:9882: note: cl_char16 operator+(const cl_char&, const cl_char16&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:168:9882: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_char& {aka const signed char&}’
+In file included from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl/source.hpp:41:0,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl.hpp:47,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend.hpp:68,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/vexcl.hpp:34,
+                 from /home/raman/WORK/GPU/VexCLTest/add.cpp:1:
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:169:147: note: cl_uchar2 operator+(const cl_uchar2&, const cl_uchar2&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:169:147: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_uchar2&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:169:1097: note: cl_uchar2 operator+(const cl_uchar2&, const cl_uchar&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:169:1097: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_uchar2&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:169:1206: note: cl_uchar2 operator+(const cl_uchar&, const cl_uchar2&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:169:1206: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_uchar& {aka const unsigned char&}’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:169:3119: note: cl_uchar4 operator+(const cl_uchar4&, const cl_uchar4&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:169:3119: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_uchar4&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:169:4069: note: cl_uchar4 operator+(const cl_uchar4&, const cl_uchar&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:169:4069: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_uchar4&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:169:4178: note: cl_uchar4 operator+(const cl_uchar&, const cl_uchar4&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:169:4178: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_uchar& {aka const unsigned char&}’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:169:6091: note: cl_uchar8 operator+(const cl_uchar8&, const cl_uchar8&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:169:6091: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_uchar8&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:169:7041: note: cl_uchar8 operator+(const cl_uchar8&, const cl_uchar&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:169:7041: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_uchar8&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:169:7150: note: cl_uchar8 operator+(const cl_uchar&, const cl_uchar8&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:169:7150: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_uchar& {aka const unsigned char&}’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:169:9068: note: cl_uchar16 operator+(const cl_uchar16&, const cl_uchar16&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:169:9068: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_uchar16&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:169:10049: note: cl_uchar16 operator+(const cl_uchar16&, const cl_uchar&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:169:10049: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_uchar16&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:169:10161: note: cl_uchar16 operator+(const cl_uchar&, const cl_uchar16&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:169:10161: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_uchar& {aka const unsigned char&}’
+In file included from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl/source.hpp:41:0,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl.hpp:47,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend.hpp:68,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/vexcl.hpp:34,
+                 from /home/raman/WORK/GPU/VexCLTest/add.cpp:1:
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:170:147: note: cl_short2 operator+(const cl_short2&, const cl_short2&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:170:147: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_short2&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:170:1097: note: cl_short2 operator+(const cl_short2&, const cl_short&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:170:1097: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_short2&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:170:1206: note: cl_short2 operator+(const cl_short&, const cl_short2&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:170:1206: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_short& {aka const short int&}’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:170:3119: note: cl_short4 operator+(const cl_short4&, const cl_short4&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:170:3119: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_short4&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:170:4069: note: cl_short4 operator+(const cl_short4&, const cl_short&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:170:4069: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_short4&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:170:4178: note: cl_short4 operator+(const cl_short&, const cl_short4&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:170:4178: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_short& {aka const short int&}’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:170:6091: note: cl_short8 operator+(const cl_short8&, const cl_short8&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:170:6091: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_short8&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:170:7041: note: cl_short8 operator+(const cl_short8&, const cl_short&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:170:7041: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_short8&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:170:7150: note: cl_short8 operator+(const cl_short&, const cl_short8&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:170:7150: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_short& {aka const short int&}’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:170:9068: note: cl_short16 operator+(const cl_short16&, const cl_short16&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:170:9068: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_short16&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:170:10049: note: cl_short16 operator+(const cl_short16&, const cl_short&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:170:10049: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_short16&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:170:10161: note: cl_short16 operator+(const cl_short&, const cl_short16&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:170:10161: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_short& {aka const short int&}’
+In file included from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl/source.hpp:41:0,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl.hpp:47,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend.hpp:68,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/vexcl.hpp:34,
+                 from /home/raman/WORK/GPU/VexCLTest/add.cpp:1:
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:171:151: note: cl_ushort2 operator+(const cl_ushort2&, const cl_ushort2&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:171:151: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_ushort2&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:171:1129: note: cl_ushort2 operator+(const cl_ushort2&, const cl_ushort&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:171:1129: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_ushort2&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:171:1242: note: cl_ushort2 operator+(const cl_ushort&, const cl_ushort2&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:171:1242: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_ushort& {aka const short unsigned int&}’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:171:3204: note: cl_ushort4 operator+(const cl_ushort4&, const cl_ushort4&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:171:3204: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_ushort4&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:171:4182: note: cl_ushort4 operator+(const cl_ushort4&, const cl_ushort&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:171:4182: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_ushort4&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:171:4295: note: cl_ushort4 operator+(const cl_ushort&, const cl_ushort4&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:171:4295: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_ushort& {aka const short unsigned int&}’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:171:6257: note: cl_ushort8 operator+(const cl_ushort8&, const cl_ushort8&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:171:6257: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_ushort8&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:171:7235: note: cl_ushort8 operator+(const cl_ushort8&, const cl_ushort&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:171:7235: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_ushort8&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:171:7348: note: cl_ushort8 operator+(const cl_ushort&, const cl_ushort8&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:171:7348: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_ushort& {aka const short unsigned int&}’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:171:9315: note: cl_ushort16 operator+(const cl_ushort16&, const cl_ushort16&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:171:9315: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_ushort16&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:171:10324: note: cl_ushort16 operator+(const cl_ushort16&, const cl_ushort&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:171:10324: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_ushort16&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:171:10440: note: cl_ushort16 operator+(const cl_ushort&, const cl_ushort16&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:171:10440: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_ushort& {aka const short unsigned int&}’
+In file included from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl/source.hpp:41:0,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl.hpp:47,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend.hpp:68,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/vexcl.hpp:34,
+                 from /home/raman/WORK/GPU/VexCLTest/add.cpp:1:
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:172:139: note: cl_int2 operator+(const cl_int2&, const cl_int2&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:172:139: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_int2&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:172:1033: note: cl_int2 operator+(const cl_int2&, const cl_int&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:172:1033: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_int2&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:172:1134: note: cl_int2 operator+(const cl_int&, const cl_int2&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:172:1134: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_int& {aka const int&}’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:172:2949: note: cl_int4 operator+(const cl_int4&, const cl_int4&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:172:2949: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_int4&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:172:3843: note: cl_int4 operator+(const cl_int4&, const cl_int&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:172:3843: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_int4&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:172:3944: note: cl_int4 operator+(const cl_int&, const cl_int4&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:172:3944: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_int& {aka const int&}’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:172:5759: note: cl_int8 operator+(const cl_int8&, const cl_int8&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:172:5759: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_int8&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:172:6653: note: cl_int8 operator+(const cl_int8&, const cl_int&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:172:6653: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_int8&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:172:6754: note: cl_int8 operator+(const cl_int&, const cl_int8&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:172:6754: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_int& {aka const int&}’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:172:8574: note: cl_int16 operator+(const cl_int16&, const cl_int16&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:172:8574: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_int16&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:172:9499: note: cl_int16 operator+(const cl_int16&, const cl_int&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:172:9499: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_int16&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:172:9603: note: cl_int16 operator+(const cl_int&, const cl_int16&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:172:9603: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_int& {aka const int&}’
+In file included from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl/source.hpp:41:0,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl.hpp:47,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend.hpp:68,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/vexcl.hpp:34,
+                 from /home/raman/WORK/GPU/VexCLTest/add.cpp:1:
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:173:143: note: cl_uint2 operator+(const cl_uint2&, const cl_uint2&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:173:143: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_uint2&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:173:1065: note: cl_uint2 operator+(const cl_uint2&, const cl_uint&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:173:1065: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_uint2&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:173:1170: note: cl_uint2 operator+(const cl_uint&, const cl_uint2&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:173:1170: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_uint& {aka const unsigned int&}’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:173:3034: note: cl_uint4 operator+(const cl_uint4&, const cl_uint4&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:173:3034: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_uint4&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:173:3956: note: cl_uint4 operator+(const cl_uint4&, const cl_uint&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:173:3956: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_uint4&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:173:4061: note: cl_uint4 operator+(const cl_uint&, const cl_uint4&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:173:4061: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_uint& {aka const unsigned int&}’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:173:5925: note: cl_uint8 operator+(const cl_uint8&, const cl_uint8&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:173:5925: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_uint8&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:173:6847: note: cl_uint8 operator+(const cl_uint8&, const cl_uint&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:173:6847: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_uint8&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:173:6952: note: cl_uint8 operator+(const cl_uint&, const cl_uint8&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:173:6952: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_uint& {aka const unsigned int&}’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:173:8821: note: cl_uint16 operator+(const cl_uint16&, const cl_uint16&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:173:8821: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_uint16&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:173:9774: note: cl_uint16 operator+(const cl_uint16&, const cl_uint&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:173:9774: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_uint16&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:173:9882: note: cl_uint16 operator+(const cl_uint&, const cl_uint16&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:173:9882: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_uint& {aka const unsigned int&}’
+In file included from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl/source.hpp:41:0,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl.hpp:47,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend.hpp:68,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/vexcl.hpp:34,
+                 from /home/raman/WORK/GPU/VexCLTest/add.cpp:1:
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:174:143: note: cl_long2 operator+(const cl_long2&, const cl_long2&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:174:143: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_long2&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:174:1065: note: cl_long2 operator+(const cl_long2&, const cl_long&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:174:1065: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_long2&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:174:1170: note: cl_long2 operator+(const cl_long&, const cl_long2&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:174:1170: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_long& {aka const long int&}’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:174:3034: note: cl_long4 operator+(const cl_long4&, const cl_long4&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:174:3034: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_long4&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:174:3956: note: cl_long4 operator+(const cl_long4&, const cl_long&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:174:3956: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_long4&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:174:4061: note: cl_long4 operator+(const cl_long&, const cl_long4&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:174:4061: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_long& {aka const long int&}’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:174:5925: note: cl_long8 operator+(const cl_long8&, const cl_long8&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:174:5925: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_long8&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:174:6847: note: cl_long8 operator+(const cl_long8&, const cl_long&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:174:6847: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_long8&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:174:6952: note: cl_long8 operator+(const cl_long&, const cl_long8&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:174:6952: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_long& {aka const long int&}’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:174:8821: note: cl_long16 operator+(const cl_long16&, const cl_long16&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:174:8821: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_long16&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:174:9774: note: cl_long16 operator+(const cl_long16&, const cl_long&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:174:9774: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_long16&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:174:9882: note: cl_long16 operator+(const cl_long&, const cl_long16&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:174:9882: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_long& {aka const long int&}’
+In file included from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl/source.hpp:41:0,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl.hpp:47,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend.hpp:68,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/vexcl.hpp:34,
+                 from /home/raman/WORK/GPU/VexCLTest/add.cpp:1:
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:175:147: note: cl_ulong2 operator+(const cl_ulong2&, const cl_ulong2&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:175:147: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_ulong2&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:175:1097: note: cl_ulong2 operator+(const cl_ulong2&, const cl_ulong&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:175:1097: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_ulong2&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:175:1206: note: cl_ulong2 operator+(const cl_ulong&, const cl_ulong2&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:175:1206: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_ulong& {aka const long unsigned int&}’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:175:3119: note: cl_ulong4 operator+(const cl_ulong4&, const cl_ulong4&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:175:3119: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_ulong4&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:175:4069: note: cl_ulong4 operator+(const cl_ulong4&, const cl_ulong&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:175:4069: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_ulong4&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:175:4178: note: cl_ulong4 operator+(const cl_ulong&, const cl_ulong4&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:175:4178: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_ulong& {aka const long unsigned int&}’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:175:6091: note: cl_ulong8 operator+(const cl_ulong8&, const cl_ulong8&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:175:6091: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_ulong8&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:175:7041: note: cl_ulong8 operator+(const cl_ulong8&, const cl_ulong&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:175:7041: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_ulong8&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:175:7150: note: cl_ulong8 operator+(const cl_ulong&, const cl_ulong8&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:175:7150: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_ulong& {aka const long unsigned int&}’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:175:9068: note: cl_ulong16 operator+(const cl_ulong16&, const cl_ulong16&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:175:9068: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_ulong16&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:175:10049: note: cl_ulong16 operator+(const cl_ulong16&, const cl_ulong&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:175:10049: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_ulong16&’
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:175:10161: note: cl_ulong16 operator+(const cl_ulong&, const cl_ulong16&)
+/home/raman/BackBoneSoftwares/vexcl/include/vexcl/types.hpp:175:10161: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘const cl_ulong& {aka const long unsigned int&}’
+In file included from /usr/include/boost/detail/container_fwd.hpp:98:0,
+                 from /usr/include/boost/functional/hash/detail/container_fwd_0x.hpp:9,
+                 from /usr/include/boost/functional/hash/extensions.hpp:17,
+                 from /usr/include/boost/functional/hash/hash.hpp:535,
+                 from /usr/include/boost/functional/hash.hpp:6,
+                 from /usr/include/boost/thread/detail/thread.hpp:31,
+                 from /usr/include/boost/thread/thread.hpp:22,
+                 from /usr/include/boost/thread.hpp:13,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/common.hpp:44,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl/source.hpp:40,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl.hpp:47,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend.hpp:68,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/vexcl.hpp:34,
+                 from /home/raman/WORK/GPU/VexCLTest/add.cpp:1:
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/complex:440:5: note: template<class _Tp> std::complex<_Tp> std::operator+(const std::complex<_Tp>&)
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/complex:440:5: note:   template argument deduction/substitution failed:
+/home/raman/WORK/GPU/VexCLTest/add.cpp:43:5: note:   ‘std::vector<double>’ is not derived from ‘const std::complex<_Tp>’
+In file included from /usr/include/boost/detail/container_fwd.hpp:98:0,
+                 from /usr/include/boost/functional/hash/detail/container_fwd_0x.hpp:9,
+                 from /usr/include/boost/functional/hash/extensions.hpp:17,
+                 from /usr/include/boost/functional/hash/hash.hpp:535,
+                 from /usr/include/boost/functional/hash.hpp:6,
+                 from /usr/include/boost/thread/detail/thread.hpp:31,
+                 from /usr/include/boost/thread/thread.hpp:22,
+                 from /usr/include/boost/thread.hpp:13,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/common.hpp:44,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl/source.hpp:40,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl.hpp:47,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend.hpp:68,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/vexcl.hpp:34,
+                 from /home/raman/WORK/GPU/VexCLTest/add.cpp:1:
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/complex:339:5: note: template<class _Tp> std::complex<_Tp> std::operator+(const _Tp&, const std::complex<_Tp>&)
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/complex:339:5: note:   template argument deduction/substitution failed:
+/home/raman/WORK/GPU/VexCLTest/add.cpp:43:5: note:   ‘std::vector<double>’ is not derived from ‘const std::complex<_Tp>’
+In file included from /usr/include/boost/detail/container_fwd.hpp:98:0,
+                 from /usr/include/boost/functional/hash/detail/container_fwd_0x.hpp:9,
+                 from /usr/include/boost/functional/hash/extensions.hpp:17,
+                 from /usr/include/boost/functional/hash/hash.hpp:535,
+                 from /usr/include/boost/functional/hash.hpp:6,
+                 from /usr/include/boost/thread/detail/thread.hpp:31,
+                 from /usr/include/boost/thread/thread.hpp:22,
+                 from /usr/include/boost/thread.hpp:13,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/common.hpp:44,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl/source.hpp:40,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl.hpp:47,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend.hpp:68,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/vexcl.hpp:34,
+                 from /home/raman/WORK/GPU/VexCLTest/add.cpp:1:
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/complex:330:5: note: template<class _Tp> std::complex<_Tp> std::operator+(const std::complex<_Tp>&, const _Tp&)
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/complex:330:5: note:   template argument deduction/substitution failed:
+/home/raman/WORK/GPU/VexCLTest/add.cpp:43:5: note:   ‘std::vector<double>’ is not derived from ‘const std::complex<_Tp>’
+In file included from /usr/include/boost/detail/container_fwd.hpp:98:0,
+                 from /usr/include/boost/functional/hash/detail/container_fwd_0x.hpp:9,
+                 from /usr/include/boost/functional/hash/extensions.hpp:17,
+                 from /usr/include/boost/functional/hash/hash.hpp:535,
+                 from /usr/include/boost/functional/hash.hpp:6,
+                 from /usr/include/boost/thread/detail/thread.hpp:31,
+                 from /usr/include/boost/thread/thread.hpp:22,
+                 from /usr/include/boost/thread.hpp:13,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/common.hpp:44,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl/source.hpp:40,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl.hpp:47,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend.hpp:68,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/vexcl.hpp:34,
+                 from /home/raman/WORK/GPU/VexCLTest/add.cpp:1:
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/complex:321:5: note: template<class _Tp> std::complex<_Tp> std::operator+(const std::complex<_Tp>&, const std::complex<_Tp>&)
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/complex:321:5: note:   template argument deduction/substitution failed:
+/home/raman/WORK/GPU/VexCLTest/add.cpp:43:5: note:   ‘std::vector<double>’ is not derived from ‘const std::complex<_Tp>’
+In file included from /usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/deque:65:0,
+                 from /usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/stack:61,
+                 from /usr/include/boost/filesystem/operations.hpp:42,
+                 from /usr/include/boost/filesystem.hpp:17,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl/filter.hpp:42,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl.hpp:45,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend.hpp:68,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/vexcl.hpp:34,
+                 from /home/raman/WORK/GPU/VexCLTest/add.cpp:1:
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/stl_deque.h:355:5: note: template<class _Tp, class _Ref, class _Ptr> std::_Deque_iterator<_Tp, _Ref, _Ptr> std::operator+(std::ptrdiff_t, const std::_Deque_iterator<_Tp, _Ref, _Ptr>&)
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/stl_deque.h:355:5: note:   template argument deduction/substitution failed:
+/home/raman/WORK/GPU/VexCLTest/add.cpp:43:5: note:   cannot convert ‘x’ (type ‘std::vector<double>’) to type ‘std::ptrdiff_t {aka long int}’
+In file included from /usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/string:54:0,
+                 from /home/raman/BackBoneSoftwares/OpenCL/include/CL/cl.hpp:174,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl.hpp:41,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend.hpp:68,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/vexcl.hpp:34,
+                 from /home/raman/WORK/GPU/VexCLTest/add.cpp:1:
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h:2469:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::basic_string<_CharT, _Traits, _Alloc>&&, _CharT)
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h:2469:5: note:   template argument deduction/substitution failed:
+/home/raman/WORK/GPU/VexCLTest/add.cpp:43:5: note:   ‘std::vector<double>’ is not derived from ‘std::basic_string<_CharT, _Traits, _Alloc>’
+In file included from /usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/string:54:0,
+                 from /home/raman/BackBoneSoftwares/OpenCL/include/CL/cl.hpp:174,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl.hpp:41,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend.hpp:68,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/vexcl.hpp:34,
+                 from /home/raman/WORK/GPU/VexCLTest/add.cpp:1:
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h:2463:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::basic_string<_CharT, _Traits, _Alloc>&&, const _CharT*)
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h:2463:5: note:   template argument deduction/substitution failed:
+/home/raman/WORK/GPU/VexCLTest/add.cpp:43:5: note:   ‘std::vector<double>’ is not derived from ‘std::basic_string<_CharT, _Traits, _Alloc>’
+In file included from /usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/string:54:0,
+                 from /home/raman/BackBoneSoftwares/OpenCL/include/CL/cl.hpp:174,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl.hpp:41,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend.hpp:68,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/vexcl.hpp:34,
+                 from /home/raman/WORK/GPU/VexCLTest/add.cpp:1:
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h:2457:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, std::basic_string<_CharT, _Traits, _Alloc>&&)
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h:2457:5: note:   template argument deduction/substitution failed:
+/home/raman/WORK/GPU/VexCLTest/add.cpp:43:5: note:   ‘std::vector<double>’ is not derived from ‘std::basic_string<_CharT, _Traits, _Alloc>’
+In file included from /usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/string:54:0,
+                 from /home/raman/BackBoneSoftwares/OpenCL/include/CL/cl.hpp:174,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl.hpp:41,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend.hpp:68,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/vexcl.hpp:34,
+                 from /home/raman/WORK/GPU/VexCLTest/add.cpp:1:
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h:2451:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, std::basic_string<_CharT, _Traits, _Alloc>&&)
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h:2451:5: note:   template argument deduction/substitution failed:
+/home/raman/WORK/GPU/VexCLTest/add.cpp:43:5: note:   mismatched types ‘const _CharT*’ and ‘std::vector<double>’
+In file included from /usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/string:54:0,
+                 from /home/raman/BackBoneSoftwares/OpenCL/include/CL/cl.hpp:174,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl.hpp:41,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend.hpp:68,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/vexcl.hpp:34,
+                 from /home/raman/WORK/GPU/VexCLTest/add.cpp:1:
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h:2439:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::basic_string<_CharT, _Traits, _Alloc>&&, std::basic_string<_CharT, _Traits, _Alloc>&&)
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h:2439:5: note:   template argument deduction/substitution failed:
+/home/raman/WORK/GPU/VexCLTest/add.cpp:43:5: note:   ‘std::vector<double>’ is not derived from ‘std::basic_string<_CharT, _Traits, _Alloc>’
+In file included from /usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/string:54:0,
+                 from /home/raman/BackBoneSoftwares/OpenCL/include/CL/cl.hpp:174,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl.hpp:41,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend.hpp:68,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/vexcl.hpp:34,
+                 from /home/raman/WORK/GPU/VexCLTest/add.cpp:1:
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h:2433:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::basic_string<_CharT, _Traits, _Alloc>&, std::basic_string<_CharT, _Traits, _Alloc>&&)
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h:2433:5: note:   template argument deduction/substitution failed:
+/home/raman/WORK/GPU/VexCLTest/add.cpp:43:5: note:   ‘std::vector<double>’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+In file included from /usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/string:54:0,
+                 from /home/raman/BackBoneSoftwares/OpenCL/include/CL/cl.hpp:174,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl.hpp:41,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend.hpp:68,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/vexcl.hpp:34,
+                 from /home/raman/WORK/GPU/VexCLTest/add.cpp:1:
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h:2427:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::basic_string<_CharT, _Traits, _Alloc>&&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h:2427:5: note:   template argument deduction/substitution failed:
+/home/raman/WORK/GPU/VexCLTest/add.cpp:43:5: note:   ‘std::vector<double>’ is not derived from ‘std::basic_string<_CharT, _Traits, _Alloc>’
+In file included from /usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/string:54:0,
+                 from /home/raman/BackBoneSoftwares/OpenCL/include/CL/cl.hpp:174,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl.hpp:41,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend.hpp:68,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/vexcl.hpp:34,
+                 from /home/raman/WORK/GPU/VexCLTest/add.cpp:1:
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h:2415:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::basic_string<_CharT, _Traits, _Alloc>&, _CharT)
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h:2415:5: note:   template argument deduction/substitution failed:
+/home/raman/WORK/GPU/VexCLTest/add.cpp:43:5: note:   ‘std::vector<double>’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+In file included from /usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/string:54:0,
+                 from /home/raman/BackBoneSoftwares/OpenCL/include/CL/cl.hpp:174,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl.hpp:41,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend.hpp:68,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/vexcl.hpp:34,
+                 from /home/raman/WORK/GPU/VexCLTest/add.cpp:1:
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h:2399:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h:2399:5: note:   template argument deduction/substitution failed:
+/home/raman/WORK/GPU/VexCLTest/add.cpp:43:5: note:   ‘std::vector<double>’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+In file included from /usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/string:55:0,
+                 from /home/raman/BackBoneSoftwares/OpenCL/include/CL/cl.hpp:174,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl.hpp:41,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend.hpp:68,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/vexcl.hpp:34,
+                 from /home/raman/WORK/GPU/VexCLTest/add.cpp:1:
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.tcc:710:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, const std::basic_string<_CharT, _Traits, _Alloc>&)
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.tcc:710:5: note:   template argument deduction/substitution failed:
+/home/raman/WORK/GPU/VexCLTest/add.cpp:43:5: note:   ‘std::vector<double>’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+In file included from /usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/string:55:0,
+                 from /home/raman/BackBoneSoftwares/OpenCL/include/CL/cl.hpp:174,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl.hpp:41,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend.hpp:68,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/vexcl.hpp:34,
+                 from /home/raman/WORK/GPU/VexCLTest/add.cpp:1:
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.tcc:694:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, const std::basic_string<_CharT, _Traits, _Alloc>&)
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.tcc:694:5: note:   template argument deduction/substitution failed:
+/home/raman/WORK/GPU/VexCLTest/add.cpp:43:5: note:   mismatched types ‘const _CharT*’ and ‘std::vector<double>’
+In file included from /usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/string:54:0,
+                 from /home/raman/BackBoneSoftwares/OpenCL/include/CL/cl.hpp:174,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl.hpp:41,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend.hpp:68,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/vexcl.hpp:34,
+                 from /home/raman/WORK/GPU/VexCLTest/add.cpp:1:
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h:2362:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::basic_string<_CharT, _Traits, _Alloc>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/basic_string.h:2362:5: note:   template argument deduction/substitution failed:
+/home/raman/WORK/GPU/VexCLTest/add.cpp:43:5: note:   ‘std::vector<double>’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+In file included from /usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/vector:66:0,
+                 from /home/raman/BackBoneSoftwares/OpenCL/include/CL/cl.hpp:170,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl.hpp:41,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend.hpp:68,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/vexcl.hpp:34,
+                 from /home/raman/WORK/GPU/VexCLTest/add.cpp:1:
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/stl_bvector.h:354:3: note: std::_Bit_const_iterator std::operator+(std::ptrdiff_t, const std::_Bit_const_iterator&)
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/stl_bvector.h:354:3: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘std::ptrdiff_t {aka long int}’
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/stl_bvector.h:268:3: note: std::_Bit_iterator std::operator+(std::ptrdiff_t, const std::_Bit_iterator&)
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/stl_bvector.h:268:3: note:   no known conversion for argument 1 from ‘std::vector<double>’ to ‘std::ptrdiff_t {aka long int}’
+In file included from /usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/stl_algobase.h:68:0,
+                 from /usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/vector:61,
+                 from /home/raman/BackBoneSoftwares/OpenCL/include/CL/cl.hpp:170,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl.hpp:41,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend.hpp:68,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/vexcl.hpp:34,
+                 from /home/raman/WORK/GPU/VexCLTest/add.cpp:1:
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/stl_iterator.h:1120:5: note: template<class _Iterator> std::move_iterator<_Iterator> std::operator+(typename std::move_iterator<_Iterator>::difference_type, const std::move_iterator<_Iterator>&)
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/stl_iterator.h:1120:5: note:   template argument deduction/substitution failed:
+/home/raman/WORK/GPU/VexCLTest/add.cpp:43:5: note:   ‘std::vector<double>’ is not derived from ‘const std::move_iterator<_Iterator>’
+In file included from /usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/stl_algobase.h:68:0,
+                 from /usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/vector:61,
+                 from /home/raman/BackBoneSoftwares/OpenCL/include/CL/cl.hpp:170,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl.hpp:41,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend.hpp:68,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/vexcl.hpp:34,
+                 from /home/raman/WORK/GPU/VexCLTest/add.cpp:1:
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/stl_iterator.h:335:5: note: template<class _Iterator> std::reverse_iterator<_Iterator> std::operator+(typename std::reverse_iterator<_Iterator>::difference_type, const std::reverse_iterator<_Iterator>&)
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/stl_iterator.h:335:5: note:   template argument deduction/substitution failed:
+/home/raman/WORK/GPU/VexCLTest/add.cpp:43:5: note:   ‘std::vector<double>’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+In file included from /usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/stl_algobase.h:68:0,
+                 from /usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/vector:61,
+                 from /home/raman/BackBoneSoftwares/OpenCL/include/CL/cl.hpp:170,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend/opencl.hpp:41,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/backend.hpp:68,
+                 from /home/raman/BackBoneSoftwares/vexcl/include/vexcl/vexcl.hpp:34,
+                 from /home/raman/WORK/GPU/VexCLTest/add.cpp:1:
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/stl_iterator.h:904:5: note: template<class _Iterator, class _Container> __gnu_cxx::__normal_iterator<_Iterator, _Container> __gnu_cxx::operator+(typename __gnu_cxx::__normal_iterator<_Iterator, _Container>::difference_type, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+/usr/lib/gcc/x86_64-redhat-linux/4.7.2/../../../../include/c++/4.7.2/bits/stl_iterator.h:904:5: note:   template argument deduction/substitution failed:
+/home/raman/WORK/GPU/VexCLTest/add.cpp:43:5: note:   ‘std::vector<double>’ is not derived from ‘const __gnu_cxx::__normal_iterator<_Iterator, _Container>’
+/home/raman/WORK/GPU/VexCLTest/add.cpp:44:11: error: ‘Z’ was not declared in this scope
+make[2]: *** [CMakeFiles/add.dir/add.cpp.o] Error 1
+make[1]: *** [CMakeFiles/add.dir/all] Error 2
+make: *** [all] Error 2

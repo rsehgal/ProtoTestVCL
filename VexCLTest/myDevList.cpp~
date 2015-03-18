@@ -1,0 +1,31 @@
+#include <iostream>
+#include <stdexcept>
+#include <device.h>
+//#include <vexcl/vexcl.hpp>
+//#include <cstring>
+
+/*
+template <class T> void ListDevice() {
+vex::Context ctx( vex::Filter::Type(CL_DEVICE_TYPE_CPU) &&
+vex::Filter::DoublePrecision );
+
+
+vex::Context ctx(vex::Filter::Type(T().deviceType) &&
+                   vex::Filter::DoublePrecision);
+  if (!ctx)
+    throw std::runtime_error("No devices available.");
+   Print out list of selected devices:
+  std::cout << ctx << std::endl;
+}
+*/
+
+
+
+int main() {
+  /* ListDevice<CPU>() OR ListDevice<GPU>() runs the primary template.
+     ListDevice<All>() runs the specialized template.
+  */
+  ListDevice<GPU>();
+	
+  //GetDevice<Cuda,GPU>().ListDevice();
+}

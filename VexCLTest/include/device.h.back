@@ -1,0 +1,81 @@
+#include <vexcl/vexcl.hpp>
+#include <cstring>
+
+class Device{
+ public : 
+	std::string deviceType;
+};
+
+class GPU : public Device{
+public :
+	GPU(){deviceType = "CL_DEVICE_TYPE_GPU";}	
+	//static std::string GetDevice(){return deviceType;}
+};
+
+class CPU : public Device{
+public :
+	CPU(){deviceType = "CL_DEVICE_TYPE_CPU";}	
+	//static std::string GetDevice(){return deviceType;}
+};
+
+class All{};
+
+class Backend{
+public:
+	std::string backend;
+};
+
+class OpenCL : public Backend{
+public:
+	OpenCL(){ backend = "VEXCL_BACKEND_OPENCL"; }
+};
+
+class Cuda : public Backend{
+public:
+	Cuda(){ backend = "VEXCL_BACKEND_CUDA"; }
+};
+
+
+template <class T> void ListDevice() {
+vex::Context ctx(vex::Filter::Type(T().deviceType) &&
+                   vex::Filter::DoublePrecision);
+  if (!ctx)
+    throw std::runtime_error("No devices available.");
+  // Print out list of selected devices:
+  std::cout << ctx << std::endl;
+}
+
+template <>
+void ListDevice<All>(){
+vex::Context ctx( vex::Filter::Any && vex::Filter::DoublePrecision );
+if (!ctx) throw std::runtime_error("No devices available.");
+// Print out list of selected devices:
+std::cout << ctx << std::endl;
+
+}
+
+/*
+template <class Bkend, class Dev>
+class GetDevice{
+public:
+void ListDevice(){
+vex::Context ctx(vex::Filter::Type(Dev().deviceType) &&
+                   vex::Filter::DoublePrecision);
+if (!ctx)
+  throw std::runtime_error("No devices available.");
+
+  std::cout << ctx << std::endl;
+}
+};
+
+//Partial Specialization 
+
+template <>
+class GetDevice<Cuda,GPU>{
+public:
+void ListDevice(){
+std::cout<<"List Device from partial Specialized class"<<std::endl;
+}
+};
+*/
+

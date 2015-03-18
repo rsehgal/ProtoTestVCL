@@ -1,0 +1,15 @@
+#!/bin/sh
+rm -rf build
+mkdir build
+cd build/
+cmake -DVEXCL_BACKEND=OpenCL ..
+#if [ "$1" = "CUDA" ]
+#then
+#  cmake -DVEXCL_BACKEND=CUDA ..
+#else
+#  cmake -DVEXCL_BACKEND=OpenCL ..
+#fi
+#
+make clean
+make
+cd ..
