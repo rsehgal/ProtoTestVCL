@@ -8,7 +8,7 @@ int main() {
   /* ListDevice<CPU>() OR ListDevice<GPU>() runs the primary template.
      ListDevice<All>() runs the specialized template.
   */
-  ListDevice<GPU>();
+  ListDevice<CPU>();
 	
   //GetDevice<Cuda,GPU>().ListDevice();
 }
